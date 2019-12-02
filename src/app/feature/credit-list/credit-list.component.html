@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+
+<table class="table" style="width: 1200px">
+
+    <tr>
+        <th>ID</th>
+        <th>Movie Title</th>
+        <th>Actor Name</th>
+        <th>Role</th>
+        <th>Action</th>
+
+    </tr>
+
+    <tr *ngFor="let c of credits">
+        <td>{{c.id}}</td>
+        <td>{{c.movie.title}}</td>
+        <td>{{c.actor.lastName}}, {{c.actor.firstName}}</td>
+        <td>{{c.role}}</td>
+        <td>Detail | Edit</td>
+    </tr>
+
+</table>

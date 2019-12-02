@@ -1,0 +1,22 @@
+export class Actor {
+
+    id: number;
+    firstName: string;
+    lastName: string;
+    gender: string;
+    birthday: Date;
+ 
+    
+    constructor(id: number= 0 ,firstName: string="",lastName: string="",gender: string="", birthday: Date =new Date()) {
+            
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.birthday = birthday;
+   
+    
+    }
+
+
+}
